@@ -35,8 +35,7 @@ def convert_to_snake_case(name):
     s1 = re.sub(r'(.)([A-Z][a-z]+)', r'\1_\2', name)
     return re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
 # Set API Key
-os.environ["OPENAI_API_KEY"] = "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"  # Replace with your key
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 #st.set_page_config(page_title="📊 LLM Rule Engine", layout="wide")
 #st.title("🤖 LLM + Pandas Rule Engine (with Normalization & Prompt Refinement)")
